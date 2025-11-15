@@ -10,7 +10,7 @@ router
   .put(updateEmployeeDetails)
   .delete(deleteEmployee);
   
-  router.route("/:id")
-    .get(getAllEmployeeDetails);
+  // router.route("/:id")
+  //   .get(getAllEmployeeDetails);
   
 export default router;
