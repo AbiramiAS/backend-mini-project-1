@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbiramiAS/books-backend.git"
+    "url": "git+https://github.com/AbiramiAS/backend-mini-project-1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AbiramiAS/books-backend/issues"
+    "url": "https://github.com/AbiramiAS/backend-mini-project-1/issues"
   },
-  "homepage": "https://github.com/AbiramiAS/books-backend#readme",
+  "homepage": "https://github.com/AbiramiAS/backend-mini-project-1#readme",
   "description": "",
   "dependencies": {
     "bcrypt": "^5.0.1",
