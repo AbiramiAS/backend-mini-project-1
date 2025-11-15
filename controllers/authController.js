@@ -1,6 +1,4 @@
 import userData from "../model/users.js";
-// import bcrypt from "bcrypt";
-
 
 export const authenticateUser = (req, res) => {
   const { username, password } = req.query;
@@ -12,6 +10,11 @@ export const authenticateUser = (req, res) => {
           }
 };
 
+export const getAllUserData = (req,res) => {
+          res.json(userData);
+}
+
 export default {
-  authenticateUser
+  authenticateUser,
+  getAllUserData
 };

@@ -1,9 +1,10 @@
 import Express from "express";
 import path from "path";
-import userRoutes from "./routes/userRoutes.js";
+import userRoutes from "./routes/authRoutes.js";
 import cors from "cors";
 import corsOptions from "./configs/corsOptions.js";
 import employeeRoutes from "./routes/employeeRoutes.js";
+import registerNewUser from "./routes/registerRoutes.js";
 
 // dotenv.config();
 const __dirname = path.resolve();
@@ -19,6 +20,7 @@ app.use(cors(corsOptions));
 //route middleware
 app.use("/employees", employeeRoutes); 
 app.use("/auth", userRoutes);
+app.use("/register", registerNewUser)
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
