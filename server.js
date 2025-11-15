@@ -1,8 +1,7 @@
 import Express from "express";
 import path from "path";
-// import dotenv from "dotenv";
+import userRoutes from "./routes/userRoutes.js";
 import cors from "cors";
-// import employeeData from "./model/employees.json";
 import corsOptions from "./configs/corsOptions.js";
 import employeeRoutes from "./routes/employeeRoutes.js";
 
@@ -19,6 +18,7 @@ app.use(cors(corsOptions));
 
 //route middleware
 app.use("/employees", employeeRoutes); 
+app.use("/auth", userRoutes);
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
